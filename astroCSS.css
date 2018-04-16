@@ -1,0 +1,17 @@
+img {
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+body {
+    text-align: center;
+    position: relative;
+    top: 90px;
+}
+
+#tableFlip {
+    position: absolute;
+    bottom: 80px;
+    opacity: .2;
+    visibility: hidden;
+}
