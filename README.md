@@ -4,4 +4,5 @@ This nifty calculator will show you all the weighs to prepare yourself for trave
 
 ***
 *Author's note:*
+
 *How dare you not think Pluto is a planet anymore. I guess I shouldn't mention the Easter egg in this project...*
