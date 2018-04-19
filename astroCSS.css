@@ -9,9 +9,14 @@ body {
     top: 90px;
 }
 
+.text-output-div {
+    margin: 15px;
+}
+
 #tableFlip {
     position: absolute;
-    bottom: 80px;
+    bottom: 90px;
     opacity: .2;
     visibility: hidden;
+    height: 250px;
 }
