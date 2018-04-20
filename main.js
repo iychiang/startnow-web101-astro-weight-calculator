@@ -39,11 +39,11 @@ function calculateWeight(userWeight, selectedPlanet) {
         if (planetInfo[0] === selectedPlanet) {
             var weightFactor = planetInfo[1];
         };
-    }
+    };
 
     var result = (userWeight * weightFactor);
     outputText.innerHTML = "If you were on " + selectedPlanet + ", you would weigh " + result.toLocaleString() + " lbs!";
-    
+
     if (selectedPlanet === planets[0][0]) { //planets[0] is Sun due to .reverse
         outputText.innerHTML = "If you were on the Sun, you'd be " + result.toLocaleString() + " lbs but you'd also be dead!";
     };
@@ -52,37 +52,27 @@ function calculateWeight(userWeight, selectedPlanet) {
 function hidePluto() {
     if (document.getElementById("pluto").checked === true) {
         planetsElm.lastChild.style.display = "none";
+        document.getElementById("banner").src = "/static/planetsbannerNoPluto.jpg";
         // works planetsElm.childNodes[10].style.display="none";
     } else {
-        planetsElm.lastChild.style.display = "block"
+        planetsElm.lastChild.style.display = "block";
+        document.getElementById("banner").src = "/static/planetsbanner.jpg";
     };
 }
 
+var counter = 0;
 function clearText() {
     outputText.innerHTML = "<br/>";
     document.getElementById("user-weight").value = "";
-    clicks();
-}
 
-var clickCount = 0;
-
-function clicks() {
-    clickCount += 1;
-    console.log(clickCount);
-
-    if (clickCount === 5) {
-        var tableFlip = document.getElementById("tableFlip").style.visibility = "visible";
-    } else if (clickCount === 8) {
-        tableFlip = document.getElementById("tableFlip").style.opacity = ".4";
-        document.getElementById("output").innerHTML = "Enjoying yourself?"
-    } else if (clickCount === 11) {
-        tableFlip = document.getElementById("tableFlip").style.opacity = ".6";
-    } else if (clickCount === 14) {
-        tableFlip = document.getElementById("tableFlip").style.opacity = ".8";
-    } else if (clickCount >= 17) {
-        tableFlip = document.getElementById("tableFlip").style.opacity = "1";
-        document.getElementById("output").innerHTML = "Refresh the page to start again."
+    let tableFlip = document.getElementById("tableFlip");
+    if (counter < 1 && counter > 0.3) {
+        tableFlip.style.visibility = "visible";
+        document.getElementById("output").innerHTML = "You found it!"; 
+    } else if (counter > 1){
+        document.getElementById("output").innerHTML = "Refresh the page to start again.";
     }
+    tableFlip.style.opacity = counter += 0.1;
 }
 
 function handleClickEvent() {
