@@ -7,4 +7,4 @@ This nifty calculator will show you all the weighs to prepare yourself for trave
 
 ![img](https://vintagespace.files.wordpress.com/2011/11/pluto-science-class.gif)
 
-*How dare you not think Pluto is a planet?! I guess I shouldn't mention where to find the Easter egg anymore...*
+*Poor Pluto. Easter egg included.*
