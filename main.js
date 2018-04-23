@@ -52,11 +52,11 @@ function calculateWeight(userWeight, selectedPlanet) {
 function hidePluto() {
     if (document.getElementById("pluto").checked === true) {
         planetsElm.lastChild.style.display = "none";
-        document.getElementById("banner").src = "/static/planetsbannerNoPluto.jpg";
+        document.getElementById("banner").src = "./static/planetsbannerNoPluto.jpg";
         // works planetsElm.childNodes[10].style.display="none";
     } else {
         planetsElm.lastChild.style.display = "block";
-        document.getElementById("banner").src = "/static/planetsbanner.jpg";
+        document.getElementById("banner").src = "./static/planetsbanner.jpg";
     };
 }
 
