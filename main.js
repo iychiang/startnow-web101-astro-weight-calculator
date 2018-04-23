@@ -28,6 +28,8 @@ function populateOptions() {
         optionElm.innerText = planetName;
         planetsElm.appendChild(optionElm);
     });
+
+    planetsElm.selectedIndex = "3";
 }
 
 populateOptions();
@@ -41,6 +43,7 @@ function calculateWeight(userWeight, selectedPlanet) {
         };
     };
 
+
     var result = (userWeight * weightFactor);
     outputText.innerHTML = "If you were on " + selectedPlanet + ", you would weigh " + result.toLocaleString() + " lbs!";
 
@@ -51,10 +54,12 @@ function calculateWeight(userWeight, selectedPlanet) {
 
 function hidePluto() {
     if (document.getElementById("pluto").checked === true) {
+        //planetsElm.removeChild(planetsElm.lastChild);
         planetsElm.lastChild.style.display = "none";
         document.getElementById("banner").src = "./static/planetsbannerNoPluto.jpg";
         // works planetsElm.childNodes[10].style.display="none";
     } else {
+        //planets.appendChild(optionElm);
         planetsElm.lastChild.style.display = "block";
         document.getElementById("banner").src = "./static/planetsbanner.jpg";
     };
