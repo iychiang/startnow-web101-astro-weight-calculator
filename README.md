@@ -6,13 +6,11 @@ This nifty calculator will show you all the weighs to prepare yourself for trave
 
 ![img](https://vintagespace.files.wordpress.com/2011/11/pluto-science-class.gif)
 
-Built with HTML, CSS, Javascript, and Bootstrap
-
----
-
-Features:  
+## Features:  
 -Weight conversions based on the mass of each planet  
 -Dropdown menu to switch between planets  
 -Clear button  
 -Hide Pluto button  
 -Easter egg  
+
+Built with HTML, CSS, Javascript, and Bootstrap
