@@ -4,7 +4,7 @@ This nifty calculator will show you all the weighs to prepare yourself for trave
 
 [__See the project live on github pages!__](https://iychiang.github.io/startnow-web101-astro-weight-calculator/)
 
-![img](./planetsWeightSS.png)
+![img](./static/planetsWeightSS.png)
 
 ## Features:  
 -Weight conversions based on the mass of each planet  
