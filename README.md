@@ -9,7 +9,7 @@ This nifty calculator will show you all the weighs to prepare yourself for trave
 
 ## Features:  
 -Weight conversions based on the mass of each planet  
--Dropdown menu to switch between planets
+-Dropdown menu to switch between planets  
 -Input box for user weight  
 -Clear button  
 -Hide Pluto button  
