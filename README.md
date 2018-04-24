@@ -4,12 +4,10 @@ This nifty calculator will show you all the weighs to prepare yourself for trave
 
 [__See the project live on github pages!__](https://iychiang.github.io/startnow-web101-astro-weight-calculator/)
 
-
----
-*Author's notes:*
-
-Built with HTML, CSS, Javascript, and Bootstrap
-
 ![img](https://vintagespace.files.wordpress.com/2011/11/pluto-science-class.gif)
+---
+Author's notes:
+
+Built with HTML, CSS, Javascript, and Bootstrap.
 
 *Easter egg included.*
